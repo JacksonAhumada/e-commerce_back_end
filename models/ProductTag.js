@@ -12,14 +12,16 @@ ProductTag.init(
       reverences: {
         model: 'tag',
         key: 'id'
-      }
+      },
+      allowNull: false
     },
     product_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'product',
         key: 'id'
-      }
+      },
+      allowNull: false
     },
   },
   {
